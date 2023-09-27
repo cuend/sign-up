@@ -35,24 +35,24 @@
         <div class="form-bg">
             <h1>You're making the right choice.</h1>
             <!-- Form content -->
-            <form action="" method="get">
+            <form action="/" method="get">
                 <div class="form-row">
                     <!-- First Name -->
                     <div class="item">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="fname">
+                        <input type="text" name="first-name" id="fname" required>
                     </div>
                     <!-- Last Name -->
                     <div class="item">
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="lname">
+                        <input type="text" name="last-name" id="lname" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <!-- Email -->
                     <div class="item">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" title="Please enter a valid email address">
                     </div>
                     <!-- Phone Number -->
                     <div class="item">
@@ -60,24 +60,26 @@
                         <input type="tel" name="phone-number" id="pnumber">
                     </div>
                 </div>
-                <div class="form-row">
+                <div class="form-row" id="last-row">
                     <!-- Password + Confirm -->
                     <div class="item">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="pword">
+                        <input type="password" name="password" id="pword" 
+                        title="Password must be at least 8 characters long, contain at least 1 number, and at least 1 special character (!, @, #, $, %, ^, &, *)"
+                        required pattern="^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{8,}$">
                     </div>
                     <div class="item">
                         <label for="confirm">Confirm Password</label>
-                        <input type="password" name="confirm" id="confrim">
+                        <input type="password" name="confirm" id="confirm" required>
                     </div>
                 </div>
-            </form>
 
-            <!-- Button + Alternative -->
-            <div class="create-acc">
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="/">Log In</a></p>
-            </div>
+                <!-- Button + Alternative -->
+                <div class="create-acc">
+                    <button type="submit" >Create Account</button>
+                    <p>Already have an account? <a href="/">Log In</a></p>
+                </div>
+            </form>
         </div>
 
         
