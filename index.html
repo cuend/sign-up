@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+    <title>Sign-up Page</title>
+</head>
+<body>
+    <!-- Background Image + Logo Side -->
+    <div class="branding">
+        <div class="logo-bg">
+            <div id="logo-text">OPULENCE</div>
+            <img src="/images/logo.svg" alt="cattle skull" id="logo-img">
+        </div>
+    </div>
+
+    <!-- Form Side -->
+    <div class="content">
+        <!-- Words -->
+        <p>
+            This is not a real online service! You know you need
+            something more in your life. What exactly that is, I am not
+            sure. Anyways, feel free to sign up.
+        </p>
+        <p>
+            You <em>know</em> you want to.
+        </p>
+        
+        <div class="form-bg">
+            <h1>You're making the right choice.</h1>
+            <!-- Form content -->
+            <form action="" method="get">
+                <div class="form-row">
+                    <!-- First Name -->
+                    <div class="item">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="fname">
+                    </div>
+                    <!-- Last Name -->
+                    <div class="item">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="lname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <!-- Email -->
+                    <div class="item">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <!-- Phone Number -->
+                    <div class="item">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone-number" id="pnumber">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <!-- Password + Confirm -->
+                    <div class="item">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="pword">
+                    </div>
+                    <div class="item">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" name="confirm" id="confrim">
+                    </div>
+                </div>
+            </form>
+
+            <!-- Button + Alternative -->
+            <div class="create-acc">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="/">Log In</a></p>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
